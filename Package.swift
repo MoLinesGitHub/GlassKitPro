@@ -43,5 +43,5 @@ let package = Package(
             dependencies: ["GlassKitPro", "GlassKitProAnimations"]
         )
     ],
-    swiftLanguageVersions: [.v6]
+    swiftLanguageModes: [.v6]
 )
