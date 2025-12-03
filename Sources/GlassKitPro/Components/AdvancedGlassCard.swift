@@ -30,4 +30,5 @@ extension GlassKit {
                     .onEnded { _ in withAnimation(.smooth(duration:0.45)){ tilt = .zero } }
             )
         }
+    }
 }

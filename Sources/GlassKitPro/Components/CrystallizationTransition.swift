@@ -32,3 +32,4 @@ extension GlassKit {
             .onTapGesture { crystal.toggle() }
         }
 }
+    }

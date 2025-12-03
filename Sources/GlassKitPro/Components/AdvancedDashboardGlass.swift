@@ -20,4 +20,5 @@ extension GlassKit {
             .padding()
             .background(RoundedRectangle(cornerRadius: 28).fill(.thinMaterial))
         }
+    }
 }

@@ -1,9 +1,6 @@
 import SwiftUI
 
 extension GlassKit {
-// ===============================================================
-
-extension GlassKit {
     struct CrystalFloatingActionButton: View {
         let icon: String
         let label: String
@@ -98,4 +95,3 @@ extension GlassKit {
 }
 
 // ===============================================================
-}

@@ -1,9 +1,7 @@
 import SwiftUI
 
 extension GlassKit {
-// ===============================================================
 
-extension GlassKit {
     struct CrystalNavigationBar: View {
         let title: String
         let subtitle: String?
@@ -70,7 +68,4 @@ extension GlassKit {
             }
         }
     }
-}
-
-// ===============================================================
 }

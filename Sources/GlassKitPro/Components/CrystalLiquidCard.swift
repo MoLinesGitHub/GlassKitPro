@@ -1,9 +1,6 @@
 import SwiftUI
 
 extension GlassKit {
-// ===============================================================
-
-extension GlassKit {
     struct CrystalLiquidCard: View {
         let title: String
         let content: AnyView
@@ -102,7 +99,4 @@ extension GlassKit {
             }
         }
     }
-}
-
-// ===============================================================
 }

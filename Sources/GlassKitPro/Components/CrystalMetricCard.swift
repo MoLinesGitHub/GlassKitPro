@@ -1,10 +1,6 @@
 import SwiftUI
 
 extension GlassKit {
-// MARK: - 17. Crystal Metric Card
-// ===============================================================
-
-extension GlassKit {
     struct CrystalMetricCard: View {
         let title: String
         let value: String
@@ -24,4 +20,73 @@ extension GlassKit {
                 case .down: return .red
                 case .neutral: return .secondary
                 }
+            }
+            
+            var icon: String {
+                switch self {
+                case .up: return "arrow.up"
+                case .down: return "arrow.down"
+                case .neutral: return "minus"
+                }
+            }
+        }
+        
+        init(
+            title: String,
+            value: String,
+            subtitle: String? = nil,
+            trend: TrendDirection? = nil,
+            accentColor: Color = .blue
+        ) {
+            self.title = title
+            self.value = value
+            self.subtitle = subtitle
+            self.trend = trend
+            self.accentColor = accentColor
+        }
+
+        var body: some View {
+            VStack(alignment: .leading, spacing: 12) {
+                Text(title)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                
+                HStack(alignment: .firstTextBaseline) {
+                    Text(value)
+                        .font(.system(size: 32, weight: .bold))
+                        .foregroundStyle(.primary)
+                        .opacity(animateValue ? 1 : 0)
+                        .offset(y: animateValue ? 0 : 10)
+                    
+                    if let trend = trend {
+                        Image(systemName: trend.icon)
+                            .font(.caption)
+                            .foregroundStyle(trend.color)
+                    }
+                    
+                    Spacer()
+                }
+                
+                if let subtitle = subtitle {
+                    Text(subtitle)
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .padding()
+            .background {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(.ultraThinMaterial)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 16)
+                            .strokeBorder(accentColor.opacity(0.3), lineWidth: 1)
+                    }
+            }
+            .onAppear {
+                withAnimation(.easeOut(duration: 0.6)) {
+                    animateValue = true
+                }
+            }
+        }
+    }
 }
