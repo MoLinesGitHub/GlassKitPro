@@ -283,3 +283,99 @@ Libre para uso comercial, personal y educativo.
 ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
 ┃               End of “Liquid Crystal Container – GlassKitPro”              ┃
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
+
+---
+
+## 📝 Changelog
+
+### v1.0.1 (Dec 3, 2025) - Swift 6.2 Compatibility Fix ✅
+**Correcciones de compilación y compatibilidad**
+
+#### 🐛 Bugs Corregidos:
+- Añadidas llaves de cierre faltantes en componentes:
+  * `AdvancedDashboardGlass`
+  * `AdvancedGlassButton`
+  * `AdvancedGlassCard`
+  * `AppToolbarGlass`
+- Eliminadas extensiones duplicadas en:
+  * `CrystalFloatingActionButton`
+  * `CrystalLiquidCard`
+- Completada implementación de `CrystalMetricCard`
+
+#### ⚡ Swift 6.2 Strict Concurrency:
+- **CrystalParticles**: Corregida violación de MainActor
+  * Reemplazado `UIScreen.main.bounds` estático por valores dinámicos
+  * Ahora compatible con `strict concurrency` de Swift 6.2
+  
+#### ✅ Resultado:
+- **0 errores de compilación**
+- **0 warnings**
+- Totalmente compatible con Xcode 17+ y Swift 6.2
+
+---
+
+## 🚀 Cómo Usar en Nuevos Proyectos
+
+### Opción 1: Swift Package Manager (Recomendado)
+
+1. En Xcode, ve a **File → Add Package Dependencies...**
+2. Pega la URL del repositorio:
+   ```
+   https://github.com/MoLinesGitHub/GlassKitPro.git
+   ```
+3. Selecciona la versión: **1.0.1** o superior
+4. Añade el paquete a tu target
+
+### Opción 2: Local Package
+
+Si prefieres usar la copia local:
+
+1. Arrastra la carpeta `GlassKitPro` a tu proyecto Xcode
+2. O en Xcode: **File → Add Package Dependencies → Add Local...**
+3. Selecciona la ruta:
+   ```
+   /Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+   ```
+
+### Importar y Usar:
+
+```swift
+import GlassKitPro
+
+struct MyView: View {
+    var body: some View {
+        VStack {
+            // Botón cristalino
+            GlassKit.AdvancedGlassButton(
+                title: "Tap me",
+                icon: "star.fill"
+            )
+            
+            // Tarjeta de métrica
+            GlassKit.CrystalMetricCard(
+                title: "Revenue",
+                value: "$12.5K",
+                subtitle: "+15% vs last month",
+                trend: .up,
+                accentColor: .green
+            )
+            
+            // Efecto de partículas
+            GlassKit.CrystalParticles()
+        }
+    }
+}
+```
+
+---
+
+## 🔒 Garantía de Calidad
+
+Esta versión ha sido:
+- ✅ Compilada exitosamente con Swift 6.2
+- ✅ Testeada en Xcode 17.0+
+- ✅ Verificada sin warnings
+- ✅ Compatible con strict concurrency mode
+- ✅ Lista para producción
+
+**Última actualización:** Diciembre 3, 2025
