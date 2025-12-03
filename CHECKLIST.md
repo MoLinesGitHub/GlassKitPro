@@ -14,7 +14,7 @@
 - [ ] Abrir proyecto en Xcode
 - [ ] File → Add Package Dependencies...
 - [ ] Pegar URL: `https://github.com/MoLinesGitHub/GlassKitPro.git`
-- [ ] Seleccionar versión: `1.0.2` o `Up to Next Major`
+- [ ] Seleccionar versión: `1.0.3` o `Up to Next Major`
 - [ ] Añadir al target principal
 - [ ] Esperar a que Xcode resuelva dependencias
 
@@ -227,10 +227,10 @@ Si tienes problemas:
 1. Revisa la sección Troubleshooting arriba
 2. Lee `COMO_USAR.md` - tiene soluciones comunes
 3. Ejecuta `validate.sh` en el directorio del paquete
-4. Verifica que usas v1.0.2 o superior
+4. Verifica que usas v1.0.3 o superior
 
 ---
 
 **Versión del Checklist:** 1.0  
-**Compatible con GlassKitPro:** v1.0.2+  
+**Compatible con GlassKitPro:** v1.0.3+  
 **Fecha:** Diciembre 3, 2025

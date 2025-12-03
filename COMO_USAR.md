@@ -18,7 +18,7 @@ Tu paquete corregido está aquí:
 /Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
 ```
 
-**Versión actual:** v1.0.2  
+**Versión actual:** v1.0.3  
 **Estado:** ✅ 100% funcional, sin errores
 
 ---
@@ -37,7 +37,7 @@ Tu paquete corregido está aquí:
    https://github.com/MoLinesGitHub/GlassKitPro.git
    ```
 4. Xcode te mostrará las versiones disponibles
-5. Selecciona: **"Up to Next Major Version"** con **1.0.2**
+5. Selecciona: **"Up to Next Major Version"** con **1.0.3**
 6. Click **"Add Package"**
 7. Selecciona tu target (ej: "Anstop")
 8. Click **"Add Package"**
@@ -80,7 +80,7 @@ Si trabajas en otro Mac o quieres una copia fresca:
 cd ~/Documents/
 git clone https://github.com/MoLinesGitHub/GlassKitPro.git
 cd GlassKitPro
-git checkout v1.0.2
+git checkout v1.0.3
 
 # Luego en Xcode: File → Add Package Dependencies → Add Local...
 # Selecciona ~/Documents/GlassKitPro
@@ -194,7 +194,7 @@ Si necesitas más info, revisa estos archivos en la carpeta del paquete:
 |---------|----------------|
 | `SUMMARY.md` | ← **EMPIEZA AQUÍ** - Resumen completo |
 | `QUICK_START.md` | Ejemplos de código paso a paso |
-| `RELEASE_NOTES.md` | Qué se corrigió en v1.0.2 |
+| `RELEASE_NOTES.md` | Qué se corrigió en v1.0.3 |
 | `README.md` | Documentación técnica detallada |
 | `validate.sh` | Script para verificar el paquete |
 
@@ -261,7 +261,7 @@ Text("Hola").miBotonGlass(title: "Click") {
 1. **Añadir paquete:**
    - File → Add Package Dependencies...
    - URL: `https://github.com/MoLinesGitHub/GlassKitPro.git`
-   - Versión: 1.0.2
+   - Versión: 1.0.3
 
 2. **Importar:**
    ```swift
@@ -284,7 +284,7 @@ Tu paquete está:
 - ✅ Completamente funcional
 - ✅ Sin errores
 - ✅ Bien documentado
-- ✅ Versionado en Git (v1.0.2)
+- ✅ Versionado en Git (v1.0.3)
 - ✅ Subido a GitHub
 - ✅ Listo para usar en cualquier proyecto
 
@@ -304,4 +304,4 @@ Tu paquete está:
 **Creado:** 3 de Diciembre, 2025  
 **Por:** GitHub Copilot v3.2  
 **Para:** MoLines  
-**Versión del Paquete:** v1.0.2 ✨
+**Versión del Paquete:** v1.0.3 ✨

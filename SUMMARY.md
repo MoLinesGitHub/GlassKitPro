@@ -19,17 +19,19 @@
 5. ✅ **0 errores** de compilación
 6. ✅ **0 warnings**
 
-### Commits Realizados:
+### Últimos Commits:
 ```
+8546d18 - actualización general (v1.0.3)
+f65ae59 - Docs: Añadir guía personalizada de uso para MoLines
+2841500 - Docs: Añadir resumen completo de correcciones y uso
 cccce71 - Tools: Añadir script de validación del paquete
 f959d38 - Docs: Añadir guía rápida de uso para nuevos proyectos
-cb2028d - Docs: Añadir notas de release v1.0.1
-0b7834c - Docs: Añadir changelog v1.0.1 y guía de uso
-358cae9 - Fix: Corregir errores de compilación Swift 6.2
 ```
 
-### Tag Creado:
+### Versiones:
 ```
+v1.0.3 - Swift 6.2 con swiftLanguageModes + CHECKLIST.md (ACTUAL)
+v1.0.2 - Documentación completa añadida
 v1.0.1 - Swift 6.2 compatibility fixes
 ```
 
