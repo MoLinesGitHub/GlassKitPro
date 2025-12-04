@@ -3,7 +3,7 @@ import SwiftUI
 extension GlassKit {
     struct LiquidFlowBackground: View {
         @State private var phase: CGFloat = 0
-        var body: some View {
+        public var body: some View {
             TimelineView(.animation) { timeline in
                 let _ = updatePhase(date: timeline.date)
                 ZStack {

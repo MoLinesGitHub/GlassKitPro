@@ -12,7 +12,7 @@ extension GlassKit {
 
         @State private var titleAnimation = false
 
-        var body: some View {
+        public var body: some View {
             HStack {
                 if let leadingIcon = leadingIcon, let leadingAction = leadingAction {
                     Button(action: leadingAction) {

@@ -4,7 +4,7 @@ extension GlassKit {
     struct DynamicGlassCarousel: View {
         let items = (1...8).map { "Tarjeta \($0)" }
 
-        var body: some View {
+        public var body: some View {
             ScrollView(.horizontal, showsIndicators:false) {
                 HStack(spacing:22) {
                     ForEach(items, id:\.self) { item in

@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystalLiquidCard: View {
         let title: String
         let content: AnyView
@@ -22,7 +22,7 @@ extension GlassKit {
             self.intensity = intensity
         }
 
-        var body: some View {
+        public var body: some View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {

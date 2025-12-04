@@ -6,7 +6,7 @@ extension GlassKit {
         let icon: String
         @State private var ripple = false
 
-        var body: some View {
+        public var body: some View {
             Button {
                 ripple = true
                 Task { try? await Task.sleep(for: .seconds(0.4)); ripple = false }

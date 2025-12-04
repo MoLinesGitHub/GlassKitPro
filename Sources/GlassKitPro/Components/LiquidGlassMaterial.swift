@@ -3,7 +3,7 @@ import SwiftUI
 extension GlassKit {
     struct LiquidGlassMaterial: View {
         @State private var t: CGFloat = 0
-        var body: some View {
+        public var body: some View {
             TimelineView(.animation) { timeline in
                 let now = timeline.date.timeIntervalSinceReferenceDate
                 let shift = sin(now/2) * 0.15

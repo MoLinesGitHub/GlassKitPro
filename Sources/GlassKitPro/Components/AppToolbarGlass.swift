@@ -3,7 +3,7 @@ import SwiftUI
 extension GlassKit {
     struct AppToolbarGlass: View {
         let icons = ["house.fill","bolt.fill","chart.bar.fill","gearshape.fill"]
-        var body: some View {
+        public var body: some View {
             HStack(spacing:28) {
                 ForEach(icons, id:\.self) { icon in
                     Image(systemName:icon)

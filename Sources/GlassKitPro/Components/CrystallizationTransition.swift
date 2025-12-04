@@ -4,7 +4,7 @@ extension GlassKit {
     struct CrystallizationTransition: View {
         @State private var crystal = false
 
-        var body: some View {
+        public var body: some View {
             ZStack {
                 LiquidGlassMaterial()
                     .clipShape(RoundedRectangle(cornerRadius: 28))

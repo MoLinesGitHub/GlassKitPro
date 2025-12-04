@@ -2,7 +2,7 @@ import SwiftUI
 
 extension GlassKit {
     struct FracturedCrystalEffect: View {
-        var body: some View {
+        public var body: some View {
             ZStack {
                 RadialGradient(
                     gradient: .init(colors: [

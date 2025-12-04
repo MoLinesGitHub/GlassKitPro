@@ -6,7 +6,7 @@ extension GlassKit {
         var subtitle: String = "Efecto compuesto completo"
         @State private var tilt = CGSize.zero
 
-        var body: some View {
+        public var body: some View {
             ZStack {
                 LiquidGlassMaterial().blur(radius: 22).scaleEffect(1.12)
                 FracturedCrystalEffect().opacity(0.55).blur(radius: 4)

@@ -1,10 +1,10 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystalParticles: View {
         @State private var particles = (0..<36).map { _ in Particle() }
 
-        var body: some View {
+        public var body: some View {
             ZStack {
                 ForEach(particles) { p in
                     Circle()

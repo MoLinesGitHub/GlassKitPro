@@ -45,7 +45,7 @@ extension GlassKit {
             self.accentColor = accentColor
         }
 
-        var body: some View {
+        public var body: some View {
             VStack(alignment: .leading, spacing: 12) {
                 Text(title)
                     .font(.caption)
