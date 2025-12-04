@@ -1,7 +1,6 @@
 import SwiftUI
 
 public enum GlassAnimations {
-
     public static var shimmer: Animation {
         .linear(duration: 1.4).repeatForever(autoreverses: false)
     }

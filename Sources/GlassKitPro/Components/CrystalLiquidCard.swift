@@ -10,11 +10,11 @@ public extension GlassKit {
         @State private var pressedState: Bool = false
         @State private var liquidFlow: Double = 0
 
-        init<Content: View>(
+        init(
             title: String,
             accentColor: Color = .blue,
             intensity: Double = 0.7,
-            @ViewBuilder content: () -> Content
+            @ViewBuilder content: () -> some View
         ) {
             self.title = title
             self.content = AnyView(content())
@@ -22,7 +22,7 @@ public extension GlassKit {
             self.intensity = intensity
         }
 
-        var body: some View {
+        public var body: some View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {

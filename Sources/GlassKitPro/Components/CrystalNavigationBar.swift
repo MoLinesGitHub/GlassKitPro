@@ -1,7 +1,6 @@
 import SwiftUI
 
 public extension GlassKit {
-
     struct CrystalNavigationBar: View {
         let title: String
         let subtitle: String?
@@ -12,9 +11,9 @@ public extension GlassKit {
 
         @State private var titleAnimation = false
 
-        var body: some View {
+        public var body: some View {
             HStack {
-                if let leadingIcon = leadingIcon, let leadingAction = leadingAction {
+                if let leadingIcon, let leadingAction {
                     Button(action: leadingAction) {
                         Image(systemName: leadingIcon)
                             .font(.system(size: 20, weight: .medium))
@@ -32,7 +31,7 @@ public extension GlassKit {
                         .foregroundStyle(.primary)
                         .scaleEffect(titleAnimation ? 1.05 : 1.0)
 
-                    if let subtitle = subtitle {
+                    if let subtitle {
                         Text(subtitle)
                             .font(.caption)
                             .foregroundStyle(.secondary)
@@ -41,7 +40,7 @@ public extension GlassKit {
 
                 Spacer()
 
-                if let trailingIcon = trailingIcon, let trailingAction = trailingAction {
+                if let trailingIcon, let trailingAction {
                     Button(action: trailingAction) {
                         Image(systemName: trailingIcon)
                             .font(.system(size: 20, weight: .medium))

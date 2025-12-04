@@ -1,6 +1,6 @@
-import SwiftUI
-import SwiftData
 import GlassKitPro
+import SwiftData
+import SwiftUI
 
 @main
 struct GlassKitProDemoApp: App {

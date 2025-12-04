@@ -2,9 +2,11 @@ import SwiftUI
 
 public extension GlassKit {
     struct AdvancedDashboardGlass: View {
+        public init() {}
+        
         let items = ["Velocidad", "CPU", "RAM", "Latencia"]
 
-        var body: some View {
+        public var body: some View {
             VStack(spacing: 18) {
                 ForEach(items, id: \.self) { item in
                     HStack {

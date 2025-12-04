@@ -1,5 +1,5 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 public struct GlassKitThemeControlCenter: View {
     @Bindable public var manager: GlassAppearanceManager
@@ -99,12 +99,12 @@ public struct GlassKitThemeControlCenter: View {
 
     private func label(for theme: GlassAppearanceManager.Theme) -> String {
         switch theme {
-        case .darkTurquoise: return "Turquesa"
-        case .lightBeige:    return "Beige"
-        case .solar:         return "Solar"
-        case .arctic:        return "Arctic"
-        case .lava:          return "Lava"
-        case .imageBackground: return "Imagen"
+        case .darkTurquoise: "Turquesa"
+        case .lightBeige: "Beige"
+        case .solar: "Solar"
+        case .arctic: "Arctic"
+        case .lava: "Lava"
+        case .imageBackground: "Imagen"
         }
     }
 
@@ -140,7 +140,7 @@ public struct GlassKitThemeControlCenter: View {
             try modelContext.save()
         } catch {
             #if DEBUG
-            print("GlassKitPro – Error guardando tema:", error.localizedDescription)
+                print("GlassKitPro – Error guardando tema:", error.localizedDescription)
             #endif
         }
     }

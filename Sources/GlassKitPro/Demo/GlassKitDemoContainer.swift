@@ -9,7 +9,7 @@ struct GlassKitDemoContainer: View {
                 VStack(spacing: 18) {
                     GlassKitThemeControlCenter(manager: manager)
                     CrystalKitProPanel { anchor in
-                        withAnimation(.smooth(duration:0.6)) {
+                        withAnimation(.smooth(duration: 0.6)) {
                             proxy.scrollTo(anchor, anchor: .center)
                         }
                     }

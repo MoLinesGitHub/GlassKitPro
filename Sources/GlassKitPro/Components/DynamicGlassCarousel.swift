@@ -1,21 +1,53 @@
 import SwiftUI
 
 public extension GlassKit {
-    struct DynamicGlassCarousel: View {
-        let items = (1...8).map { "Tarjeta \($0)" }
+    struct DynamicGlassCarousel<Data, Content>: View where Data: RandomAccessCollection, Data.Element: Identifiable, Content: View {
+        public let data: Data
+        @ViewBuilder public let content: (Data.Element) -> Content
 
-        var body: some View {
-            ScrollView(.horizontal, showsIndicators:false) {
-                HStack(spacing:22) {
-                    ForEach(items, id:\.self) { item in
-                        Text(item)
-                            .frame(width:200, height:150)
-                            .background(.ultraThinMaterial)
-                            .clipShape(RoundedRectangle(cornerRadius:24))
+        public init(_ data: Data, @ViewBuilder content: @escaping (Data.Element) -> Content) {
+            self.data = data
+            self.content = content
+        }
+
+        public var body: some View {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 22) {
+                    ForEach(data) { element in
+                        content(element)
                     }
                 }
                 .padding()
             }
         }
-}
     }
+}
+
+// MARK: - Convenience for Strings
+
+public extension GlassKit.DynamicGlassCarousel where Data == [IdentifiedString], Content == TextCard {
+    init(items: [String] = (1...8).map { "Tarjeta \($0)" }) {
+        let identified = items.enumerated().map { IdentifiedString(id: $0.offset, value: $0.element) }
+        self.init(identified) { element in
+            TextCard(text: element.value)
+        }
+    }
+}
+
+// MARK: - Helper Types
+
+public struct IdentifiedString: Identifiable, Hashable {
+    public let id: Int
+    public let value: String
+}
+
+public struct TextCard: View {
+    public let text: String
+    public init(text: String) { self.text = text }
+    public var body: some View {
+        Text(text)
+            .frame(width: 200, height: 150)
+            .background(.ultraThinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 24))
+    }
+}
