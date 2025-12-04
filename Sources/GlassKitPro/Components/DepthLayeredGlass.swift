@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct DepthLayeredGlass<Content: View>: View {
         @ViewBuilder var content: () -> Content
         var body: some View {

@@ -40,7 +40,8 @@ let package = Package(
         ),
         .executableTarget(
             name: "GlassKitProDemoApp",
-            dependencies: ["GlassKitPro", "GlassKitProAnimations"]
+            dependencies: ["GlassKitPro", "GlassKitProAnimations"],
+            path: "Examples/GlassKitProDemoApp"
         )
     ],
     swiftLanguageModes: [.v6]

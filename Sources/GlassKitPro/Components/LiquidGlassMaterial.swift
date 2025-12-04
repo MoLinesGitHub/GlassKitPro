@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct LiquidGlassMaterial: View {
         @State private var t: CGFloat = 0
         var body: some View {

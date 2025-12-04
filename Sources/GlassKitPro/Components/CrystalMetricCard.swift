@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystalMetricCard: View {
         let title: String
         let value: String

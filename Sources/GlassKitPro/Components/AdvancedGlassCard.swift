@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct AdvancedGlassCard: View {
         var title: String = "Advanced Glass Card"
         var subtitle: String = "Efecto compuesto completo"

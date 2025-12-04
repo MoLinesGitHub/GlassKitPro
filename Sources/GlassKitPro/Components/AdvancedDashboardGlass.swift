@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct AdvancedDashboardGlass: View {
         let items = ["Velocidad", "CPU", "RAM", "Latencia"]
 

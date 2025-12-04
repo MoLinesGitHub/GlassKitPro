@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct FrostedSidebarGlass: View {
         let sections = ["Inicio", "Panel", "Métricas", "Configuración"]
 
