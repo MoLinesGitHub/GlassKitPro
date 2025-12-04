@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct LiquidFlowBackground: View {
         @State private var phase: CGFloat = 0
         var body: some View {

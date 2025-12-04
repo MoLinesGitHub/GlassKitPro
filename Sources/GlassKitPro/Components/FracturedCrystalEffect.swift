@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct FracturedCrystalEffect: View {
         var body: some View {
             ZStack {

@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystallizationTransition: View {
         @State private var crystal = false
 

@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct GlassHeroBanner: View {
         @State private var shine = false
         var body: some View {

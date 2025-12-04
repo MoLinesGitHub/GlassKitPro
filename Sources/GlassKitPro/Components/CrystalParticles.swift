@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystalParticles: View {
         @State private var particles = (0..<36).map { _ in Particle() }
 

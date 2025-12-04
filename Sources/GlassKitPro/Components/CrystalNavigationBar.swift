@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
 
     struct CrystalNavigationBar: View {
         let title: String

@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystalLiquidCard: View {
         let title: String
         let content: AnyView

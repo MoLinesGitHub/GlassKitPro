@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct AppToolbarGlass: View {
         let icons = ["house.fill","bolt.fill","chart.bar.fill","gearshape.fill"]
         var body: some View {

@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct DynamicGlassCarousel: View {
         let items = (1...8).map { "Tarjeta \($0)" }
 

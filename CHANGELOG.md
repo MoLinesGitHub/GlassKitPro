@@ -4,6 +4,45 @@ Todas las versiones notables de GlassKitPro están documentadas aquí.
 
 ---
 
+## [1.0.4] - 2025-12-04
+
+### 🔓 API Pública
+- **`public enum GlassKit {}`:** El namespace GlassKit ahora es público para uso externo
+- **`public extension GlassKit`:** Todas las extensiones de componentes ahora son públicas
+  - Esto permite que los componentes sean accesibles desde proyectos externos
+  - 17 archivos de componentes actualizados
+
+### 📦 Componentes Públicos Disponibles
+Todos los siguientes componentes ahora son accesibles como `GlassKit.NombreComponente`:
+- `GlassKit.AdvancedDashboardGlass`
+- `GlassKit.AdvancedGlassButton`
+- `GlassKit.AdvancedGlassCard`
+- `GlassKit.AppToolbarGlass`
+- `GlassKit.CrystalFloatingActionButton`
+- `GlassKit.CrystalLiquidCard`
+- `GlassKit.CrystalMetricCard`
+- `GlassKit.CrystalNavigationBar`
+- `GlassKit.CrystalParticles`
+- `GlassKit.CrystallizationTransition`
+- `GlassKit.DepthLayeredGlass`
+- `GlassKit.DynamicGlassCarousel`
+- `GlassKit.FracturedCrystalEffect`
+- `GlassKit.FrostedSidebarGlass`
+- `GlassKit.GlassHeroBanner`
+- `GlassKit.LiquidFlowBackground`
+- `GlassKit.LiquidGlassMaterial`
+
+### 💡 Migración
+- Reemplaza `SimpleParticlesView` con `GlassKit.CrystalParticles` en tu código
+
+### ✅ Estado
+- ✅ API pública completa
+- ✅ Todos los componentes accesibles externamente
+- ✅ Compatible con Swift 6.2
+- ✅ Documentación actualizada
+
+---
+
 ## [1.0.3] - 2025-12-03
 
 ### 🔧 Cambios Técnicos
@@ -89,7 +128,7 @@ Todas las versiones notables de GlassKitPro están documentadas aquí.
 1. Project Navigator → Packages
 2. Click derecho en GlassKitPro
 3. "Update Package"
-4. Se actualizará a v1.0.3 automáticamente
+4. Se actualizará a v1.0.4 automáticamente
 ```
 
 ### Si usas copia local:
@@ -97,7 +136,7 @@ Todas las versiones notables de GlassKitPro están documentadas aquí.
 ```bash
 cd /Volumes/SSD/Package_Dependencies/GlassKitPro
 git pull origin main
-git checkout v1.0.3
+git checkout v1.0.4
 ```
 
 ---
@@ -106,7 +145,8 @@ git checkout v1.0.3
 
 | Versión | Fecha | Estado | Descripción |
 |---------|-------|--------|-------------|
-| **1.0.3** | 03/12/25 | ✅ **RECOMENDADA** | Swift 6.2 modes + CHECKLIST |
+| **1.0.4** | 04/12/25 | ✅ **RECOMENDADA** | API pública completa |
+| 1.0.3 | 03/12/25 | ✅ Estable | Swift 6.2 modes + CHECKLIST |
 | 1.0.2 | 03/12/25 | ✅ Estable | Documentación completa |
 | 1.0.1 | 03/12/25 | ✅ Estable | Correcciones críticas |
 | 1.0.0 | 02/12/25 | ❌ No usar | Pre-corrección |
@@ -126,13 +166,13 @@ git checkout v1.0.3
 ## 📞 Soporte
 
 ¿Problemas con alguna versión?
-1. Asegúrate de usar **v1.0.3** (la más reciente)
+1. Asegúrate de usar **v1.0.4** (la más reciente)
 2. Revisa `COMO_USAR.md` para soluciones comunes
 3. Ejecuta `./validate.sh` para verificar el paquete
 4. Verifica que tu proyecto usa Swift 6.2+
 
 ---
 
-**Última actualización:** 3 de Diciembre, 2025  
-**Versión actual:** v1.0.3  
+**Última actualización:** 4 de Diciembre, 2025  
+**Versión actual:** v1.0.4  
 **Mantenedor:** MoLines Designs

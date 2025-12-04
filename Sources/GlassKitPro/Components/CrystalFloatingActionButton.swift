@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension GlassKit {
+public extension GlassKit {
     struct CrystalFloatingActionButton: View {
         let icon: String
         let label: String
