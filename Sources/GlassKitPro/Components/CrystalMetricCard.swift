@@ -2,34 +2,7 @@ import SwiftUI
 
 public extension GlassKit {
     struct CrystalMetricCard: View {
-        let title: String
-        let value: String
-        let subtitle: String?
-        let trend: TrendDirection?
-        let accentColor: Color
-
-        @State private var animateValue = false
-        @State private var shimmerOffset: CGFloat = -200
-
-        enum TrendDirection {
-            case up, down, neutral
-
-            var color: Color {
-                switch self {
-                case .up: .green
-                case .down: .red
-                case .neutral: .secondary
-                }
-            }
-
-            var icon: String {
-                switch self {
-                case .up: "arrow.up"
-                case .down: "arrow.down"
-                case .neutral: "minus"
-                }
-            }
-        }
+        // MARK: Lifecycle
 
         init(
             title: String,
@@ -45,18 +18,20 @@ public extension GlassKit {
             self.accentColor = accentColor
         }
 
+        // MARK: Public
+
         public var body: some View {
             VStack(alignment: .leading, spacing: 12) {
-                Text(title)
+                Text(self.title)
                     .font(.caption)
                     .foregroundStyle(.secondary)
 
                 HStack(alignment: .firstTextBaseline) {
-                    Text(value)
+                    Text(self.value)
                         .font(.system(size: 32, weight: .bold))
                         .foregroundStyle(.primary)
-                        .opacity(animateValue ? 1 : 0)
-                        .offset(y: animateValue ? 0 : 10)
+                        .opacity(self.animateValue ? 1 : 0)
+                        .offset(y: self.animateValue ? 0 : 10)
 
                     if let trend {
                         Image(systemName: trend.icon)
@@ -79,14 +54,49 @@ public extension GlassKit {
                     .fill(.ultraThinMaterial)
                     .overlay {
                         RoundedRectangle(cornerRadius: 16)
-                            .strokeBorder(accentColor.opacity(0.3), lineWidth: 1)
+                            .strokeBorder(self.accentColor.opacity(0.3), lineWidth: 1)
                     }
             }
             .onAppear {
                 withAnimation(.easeOut(duration: 0.6)) {
-                    animateValue = true
+                    self.animateValue = true
                 }
             }
         }
+
+        // MARK: Internal
+
+        enum TrendDirection {
+            case up, down, neutral
+
+            // MARK: Internal
+
+            var color: Color {
+                switch self {
+                case .up: .green
+                case .down: .red
+                case .neutral: .secondary
+                }
+            }
+
+            var icon: String {
+                switch self {
+                case .up: "arrow.up"
+                case .down: "arrow.down"
+                case .neutral: "minus"
+                }
+            }
+        }
+
+        let title: String
+        let value: String
+        let subtitle: String?
+        let trend: TrendDirection?
+        let accentColor: Color
+
+        // MARK: Private
+
+        @State private var animateValue = false
+        @State private var shimmerOffset: CGFloat = -200
     }
 }

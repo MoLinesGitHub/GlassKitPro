@@ -2,14 +2,15 @@ import SwiftData
 import SwiftUI
 
 public struct GlassKitThemeControlCenter: View {
-    @Bindable public var manager: GlassAppearanceManager
-
-    @Environment(\.modelContext) private var modelContext
-    @Query private var storedThemes: [GlassThemeEntity]
+    // MARK: Lifecycle
 
     public init(manager: GlassAppearanceManager) {
         self.manager = manager
     }
+
+    // MARK: Public
+
+    @Bindable public var manager: GlassAppearanceManager
 
     public var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -28,9 +29,9 @@ public struct GlassKitThemeControlCenter: View {
                 HStack(spacing: 12) {
                     ForEach(GlassAppearanceManager.Theme.allCases, id: \.self) { theme in
                         Button {
-                            select(theme)
+                            self.select(theme)
                         } label: {
-                            themeChip(for: theme)
+                            self.themeChip(for: theme)
                         }
                         .buttonStyle(.plain)
                     }
@@ -50,14 +51,19 @@ public struct GlassKitThemeControlCenter: View {
         .shadow(color: .black.opacity(0.45), radius: 26, y: 18)
         .padding(.horizontal)
         .onAppear {
-            restorePersistedThemeIfNeeded()
+            self.restorePersistedThemeIfNeeded()
         }
     }
+
+    // MARK: Private
+
+    @Environment(\.modelContext) private var modelContext
+    @Query private var storedThemes: [GlassThemeEntity]
 
     // MARK: - UI helpers
 
     private func themeChip(for theme: GlassAppearanceManager.Theme) -> some View {
-        let isSelected = (theme == manager.theme)
+        let isSelected = (theme == self.manager.theme)
         let preview = GlassAppearanceManager.view(for: theme)
 
         return VStack(alignment: .leading, spacing: 6) {
@@ -73,7 +79,7 @@ public struct GlassKitThemeControlCenter: View {
                 .frame(width: 96, height: 56)
                 .clipped()
 
-            Text(label(for: theme))
+            Text(self.label(for: theme))
                 .font(.caption2)
                 .foregroundStyle(.white.opacity(0.9))
                 .lineLimit(1)
@@ -116,14 +122,14 @@ public struct GlassKitThemeControlCenter: View {
             let theme = GlassAppearanceManager.Theme(rawValue: entity.themeRawValue)
         else { return }
 
-        manager.theme = theme
+        self.manager.theme = theme
     }
 
     private func select(_ theme: GlassAppearanceManager.Theme) {
         withAnimation(.easeInOut(duration: 0.45)) {
-            manager.theme = theme
+            self.manager.theme = theme
         }
-        persistTheme(theme)
+        self.persistTheme(theme)
     }
 
     private func persistTheme(_ theme: GlassAppearanceManager.Theme) {
@@ -133,11 +139,11 @@ public struct GlassKitThemeControlCenter: View {
             existing.themeRawValue = theme.rawValue
         } else {
             let entity = GlassThemeEntity(id: id, themeRawValue: theme.rawValue)
-            modelContext.insert(entity)
+            self.modelContext.insert(entity)
         }
 
         do {
-            try modelContext.save()
+            try self.modelContext.save()
         } catch {
             #if DEBUG
                 print("GlassKitPro – Error guardando tema:", error.localizedDescription)

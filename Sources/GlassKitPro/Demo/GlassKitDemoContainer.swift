@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct GlassKitDemoContainer: View {
-    @State private var manager = GlassAppearanceManager()
+    // MARK: Internal
 
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(spacing: 18) {
-                    GlassKitThemeControlCenter(manager: manager)
+                    GlassKitThemeControlCenter(manager: self.manager)
                     CrystalKitProPanel { anchor in
                         withAnimation(.smooth(duration: 0.6)) {
                             proxy.scrollTo(anchor, anchor: .center)
@@ -24,7 +24,11 @@ struct GlassKitDemoContainer: View {
                 }
                 .padding()
             }
-            .background(manager.backgroundView)
+            .background(self.manager.backgroundView)
         }
     }
+
+    // MARK: Private
+
+    @State private var manager = GlassAppearanceManager()
 }

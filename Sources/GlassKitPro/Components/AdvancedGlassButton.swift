@@ -2,17 +2,17 @@ import SwiftUI
 
 public extension GlassKit {
     struct AdvancedGlassButton: View {
-        let title: String
-        let icon: String
-        @State private var ripple = false
+        // MARK: Public
 
         public var body: some View {
             Button {
-                ripple = true
-                Task { try? await Task.sleep(for: .seconds(0.4)); ripple = false }
+                self.ripple = true
+                Task { try? await Task.sleep(for: .seconds(0.4))
+                    self.ripple = false
+                }
             } label: {
                 HStack(spacing: 10) {
-                    Image(systemName: icon)
+                    Image(systemName: self.icon)
                         .font(.title3)
                         .padding(8)
                         .background(
@@ -27,7 +27,7 @@ public extension GlassKit {
                                 )
                         )
 
-                    Text(title)
+                    Text(self.title)
                         .font(.footnote)
                         .textCase(.uppercase)
                         .foregroundStyle(.white.opacity(0.92))
@@ -38,15 +38,24 @@ public extension GlassKit {
                 .clipShape(Capsule())
                 .overlay(Capsule().stroke(Color.white.opacity(0.4)))
                 .overlay {
-                    if ripple {
+                    if self.ripple {
                         Circle()
                             .fill(Color.white.opacity(0.35))
-                            .scaleEffect(ripple ? 2.4 : 0.1)
-                            .opacity(ripple ? 0 : 1)
-                            .animation(.easeOut(duration: 0.6), value: ripple)
+                            .scaleEffect(self.ripple ? 2.4 : 0.1)
+                            .opacity(self.ripple ? 0 : 1)
+                            .animation(.easeOut(duration: 0.6), value: self.ripple)
                     }
                 }
             }
         }
+
+        // MARK: Internal
+
+        let title: String
+        let icon: String
+
+        // MARK: Private
+
+        @State private var ripple = false
     }
 }

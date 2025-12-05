@@ -2,11 +2,11 @@ import SwiftUI
 
 public extension GlassKit {
     struct CrystalParticles: View {
-        @State private var particles = (0 ..< 36).map { _ in Particle() }
+        // MARK: Public
 
         public var body: some View {
             ZStack {
-                ForEach(particles) { p in
+                ForEach(self.particles) { p in
                     Circle()
                         .fill(Color.white.opacity(p.opacity))
                         .frame(width: p.size, height: p.size)
@@ -14,34 +14,44 @@ public extension GlassKit {
                 }
             }
             .onReceive(Timer.publish(every: 0.016, on: .main, in: .common).autoconnect()) { _ in
-                update()
+                self.update()
             }
         }
 
-        func update() {
-            for i in particles.indices {
-                particles[i].y -= particles[i].speed
-                particles[i].life += 1
-                if particles[i].y < -40 { particles[i] = Particle() }
-            }
-        }
+        // MARK: Internal
 
         struct Particle: Identifiable {
-            let id = UUID()
-            var x: CGFloat
-            var y: CGFloat
-            var size = CGFloat.random(in: 2 ... 6)
-            var opacity = CGFloat.random(in: 0.25 ... 0.9)
-            var speed = CGFloat.random(in: 0.4 ... 1.2)
-            var life: CGFloat = 0
+            // MARK: Lifecycle
 
             init() {
                 // Usar valores razonables por defecto para iPhone/iPad
                 let screenWidth: CGFloat = 400
                 let screenHeight: CGFloat = 800
-                x = CGFloat.random(in: 0 ... screenWidth)
-                y = screenHeight + CGFloat.random(in: 20 ... 120)
+                self.x = CGFloat.random(in: 0...screenWidth)
+                self.y = screenHeight + CGFloat.random(in: 20...120)
+            }
+
+            // MARK: Internal
+
+            let id = UUID()
+            var x: CGFloat
+            var y: CGFloat
+            var size = CGFloat.random(in: 2...6)
+            var opacity = CGFloat.random(in: 0.25...0.9)
+            var speed = CGFloat.random(in: 0.4...1.2)
+            var life: CGFloat = 0
+        }
+
+        func update() {
+            for i in self.particles.indices {
+                self.particles[i].y -= self.particles[i].speed
+                self.particles[i].life += 1
+                if self.particles[i].y < -40 { self.particles[i] = Particle() }
             }
         }
+
+        // MARK: Private
+
+        @State private var particles = (0..<36).map { _ in Particle() }
     }
 }

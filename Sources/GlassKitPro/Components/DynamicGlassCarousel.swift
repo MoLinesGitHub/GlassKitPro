@@ -2,19 +2,23 @@ import SwiftUI
 
 public extension GlassKit {
     struct DynamicGlassCarousel<Data, Content>: View where Data: RandomAccessCollection, Data.Element: Identifiable, Content: View {
-        public let data: Data
-        @ViewBuilder public let content: (Data.Element) -> Content
+        // MARK: Lifecycle
 
         public init(_ data: Data, @ViewBuilder content: @escaping (Data.Element) -> Content) {
             self.data = data
             self.content = content
         }
 
+        // MARK: Public
+
+        public let data: Data
+        @ViewBuilder public let content: (Data.Element) -> Content
+
         public var body: some View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 22) {
-                    ForEach(data) { element in
-                        content(element)
+                    ForEach(self.data) { element in
+                        self.content(element)
                     }
                 }
                 .padding()
@@ -42,10 +46,16 @@ public struct IdentifiedString: Identifiable, Hashable {
 }
 
 public struct TextCard: View {
-    public let text: String
+    // MARK: Lifecycle
+
     public init(text: String) { self.text = text }
+
+    // MARK: Public
+
+    public let text: String
+
     public var body: some View {
-        Text(text)
+        Text(self.text)
             .frame(width: 200, height: 150)
             .background(.ultraThinMaterial)
             .clipShape(RoundedRectangle(cornerRadius: 24))

@@ -2,7 +2,8 @@ import SwiftUI
 
 public extension GlassKit {
     struct DepthLayeredGlass<Content: View>: View {
-        @ViewBuilder var content: () -> Content
+        // MARK: Public
+
         public var body: some View {
             ZStack {
                 RoundedRectangle(cornerRadius: 26)
@@ -23,7 +24,7 @@ public extension GlassKit {
                     .scaleEffect(1.05)
                     .opacity(0.45)
 
-                content()
+                self.content()
                     .padding(16)
                     .background(.ultraThinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 22))
@@ -33,5 +34,9 @@ public extension GlassKit {
                     )
             }
         }
+
+        // MARK: Internal
+
+        @ViewBuilder var content: () -> Content
     }
 }

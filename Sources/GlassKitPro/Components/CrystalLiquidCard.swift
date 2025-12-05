@@ -2,13 +2,7 @@ import SwiftUI
 
 public extension GlassKit {
     struct CrystalLiquidCard: View {
-        let title: String
-        let content: AnyView
-        let accentColor: Color
-        let intensity: Double
-
-        @State private var pressedState: Bool = false
-        @State private var liquidFlow: Double = 0
+        // MARK: Lifecycle
 
         init(
             title: String,
@@ -22,11 +16,13 @@ public extension GlassKit {
             self.intensity = intensity
         }
 
+        // MARK: Public
+
         public var body: some View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(title)
+                        Text(self.title)
                             .font(.title2.weight(.semibold))
                             .foregroundStyle(.primary)
 
@@ -34,9 +30,9 @@ public extension GlassKit {
                             .fill(
                                 LinearGradient(
                                     colors: [
-                                        accentColor.opacity(0.6),
-                                        accentColor.opacity(0.8),
-                                        accentColor.opacity(0.4),
+                                        self.accentColor.opacity(0.6),
+                                        self.accentColor.opacity(0.8),
+                                        self.accentColor.opacity(0.4)
                                     ],
                                     startPoint: .leading,
                                     endPoint: .trailing
@@ -44,12 +40,12 @@ public extension GlassKit {
                             )
                             .frame(height: 3)
                             .frame(maxWidth: 60)
-                            .animation(.easeInOut(duration: 0.6), value: pressedState)
+                            .animation(.easeInOut(duration: 0.6), value: self.pressedState)
                     }
                     Spacer()
                 }
 
-                content
+                self.content
             }
             .padding(.all, 20)
             .background {
@@ -61,9 +57,9 @@ public extension GlassKit {
                         .fill(
                             LinearGradient(
                                 colors: [
-                                    .white.opacity(pressedState ? 0.15 : 0.08),
-                                    .white.opacity(pressedState ? 0.05 : 0.02),
-                                    accentColor.opacity(pressedState ? 0.12 : 0.06),
+                                    .white.opacity(self.pressedState ? 0.15 : 0.08),
+                                    .white.opacity(self.pressedState ? 0.05 : 0.02),
+                                    self.accentColor.opacity(self.pressedState ? 0.12 : 0.06)
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -74,9 +70,9 @@ public extension GlassKit {
                         .strokeBorder(
                             LinearGradient(
                                 colors: [
-                                    accentColor.opacity(intensity),
+                                    self.accentColor.opacity(self.intensity),
                                     .white.opacity(0.4),
-                                    accentColor.opacity(intensity * 0.8),
+                                    self.accentColor.opacity(self.intensity * 0.8)
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
@@ -85,18 +81,30 @@ public extension GlassKit {
                         )
                 }
             }
-            .scaleEffect(pressedState ? 0.985 : 1.0)
-            .shadow(color: accentColor.opacity(0.35), radius: 12, y: 8)
+            .scaleEffect(self.pressedState ? 0.985 : 1.0)
+            .shadow(color: self.accentColor.opacity(0.35), radius: 12, y: 8)
             .onTapGesture {
                 withAnimation(.easeInOut(duration: 0.15)) {
-                    pressedState = true
+                    self.pressedState = true
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
                     withAnimation(.easeInOut(duration: 0.15)) {
-                        pressedState = false
+                        self.pressedState = false
                     }
                 }
             }
         }
+
+        // MARK: Internal
+
+        let title: String
+        let content: AnyView
+        let accentColor: Color
+        let intensity: Double
+
+        // MARK: Private
+
+        @State private var pressedState: Bool = false
+        @State private var liquidFlow: Double = 0
     }
 }

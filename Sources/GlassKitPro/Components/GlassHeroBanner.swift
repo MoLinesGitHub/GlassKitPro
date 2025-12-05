@@ -2,7 +2,8 @@ import SwiftUI
 
 public extension GlassKit {
     struct GlassHeroBanner: View {
-        @State private var shine = false
+        // MARK: Public
+
         public var body: some View {
             ZStack {
                 LiquidGlassMaterial().blur(radius: 28)
@@ -15,5 +16,9 @@ public extension GlassKit {
             .frame(height: 240)
             .clipShape(RoundedRectangle(cornerRadius: 32))
         }
+
+        // MARK: Private
+
+        @State private var shine = false
     }
 }

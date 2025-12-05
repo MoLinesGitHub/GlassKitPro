@@ -4,12 +4,16 @@ import SwiftUI
 
 @main
 struct GlassKitProDemoApp: App {
-    @State private var manager = GlassAppearanceManager()
+    // MARK: Internal
 
     var body: some Scene {
         WindowGroup {
-            GlassKitDemoContainer(manager: manager)
+            GlassKitDemoContainer(manager: self.manager)
                 .modelContainer(for: GlassThemeEntity.self)
         }
     }
+
+    // MARK: Private
+
+    @State private var manager = GlassAppearanceManager()
 }

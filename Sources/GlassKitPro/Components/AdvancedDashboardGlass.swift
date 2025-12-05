@@ -2,13 +2,15 @@ import SwiftUI
 
 public extension GlassKit {
     struct AdvancedDashboardGlass: View {
+        // MARK: Lifecycle
+
         public init() {}
-        
-        let items = ["Velocidad", "CPU", "RAM", "Latencia"]
+
+        // MARK: Public
 
         public var body: some View {
             VStack(spacing: 18) {
-                ForEach(items, id: \.self) { item in
+                ForEach(self.items, id: \.self) { item in
                     HStack {
                         Text(item).foregroundStyle(.white.opacity(0.95))
                         Spacer()
@@ -22,5 +24,9 @@ public extension GlassKit {
             .padding()
             .background(RoundedRectangle(cornerRadius: 28).fill(.thinMaterial))
         }
+
+        // MARK: Internal
+
+        let items = ["Velocidad", "CPU", "RAM", "Latencia"]
     }
 }

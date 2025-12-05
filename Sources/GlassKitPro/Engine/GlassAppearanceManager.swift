@@ -7,6 +7,12 @@ import SwiftUI
 /// Gestor global de apariencia para todos los componentes GlassKit.
 @Observable
 public final class GlassAppearanceManager {
+    // MARK: Lifecycle
+
+    public init() {}
+
+    // MARK: Public
+
     /// Tema lógico (no depende todavía de LDR/HDR).
     public enum Theme: String, CaseIterable {
         case darkTurquoise
@@ -36,7 +42,10 @@ public final class GlassAppearanceManager {
     /// Tema actual elegido en la UI.
     public var theme: Theme = .darkTurquoise
 
-    public init() {}
+    /// Fondo actual reactivo al tema (y dinámico a LDR/HDR).
+    public var backgroundView: AnyView {
+        Self.view(for: self.theme)
+    }
 
     // MARK: - Perfil de luz (LDR / HDR)
 
@@ -173,7 +182,7 @@ public final class GlassAppearanceManager {
                             LinearGradient(
                                 colors: [
                                     palette.background.opacity(0.4),
-                                    palette.background.opacity(0.9),
+                                    palette.background.opacity(0.9)
                                 ],
                                 startPoint: .top,
                                 endPoint: .bottom
@@ -190,7 +199,7 @@ public final class GlassAppearanceManager {
                 LinearGradient(
                     colors: [
                         palette.background,
-                        palette.glow,
+                        palette.glow
                     ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
@@ -198,10 +207,5 @@ public final class GlassAppearanceManager {
                 .ignoresSafeArea()
             )
         }
-    }
-
-    /// Fondo actual reactivo al tema (y dinámico a LDR/HDR).
-    public var backgroundView: AnyView {
-        Self.view(for: theme)
     }
 }

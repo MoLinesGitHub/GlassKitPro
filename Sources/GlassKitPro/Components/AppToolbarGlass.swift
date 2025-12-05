@@ -2,10 +2,11 @@ import SwiftUI
 
 public extension GlassKit {
     struct AppToolbarGlass: View {
-        let icons = ["house.fill", "bolt.fill", "chart.bar.fill", "gearshape.fill"]
+        // MARK: Public
+
         public var body: some View {
             HStack(spacing: 28) {
-                ForEach(icons, id: \.self) { icon in
+                ForEach(self.icons, id: \.self) { icon in
                     Image(systemName: icon)
                         .font(.title3)
                         .frame(width: 50, height: 50)
@@ -15,5 +16,9 @@ public extension GlassKit {
             }
             .padding()
         }
+
+        // MARK: Internal
+
+        let icons = ["house.fill", "bolt.fill", "chart.bar.fill", "gearshape.fill"]
     }
 }

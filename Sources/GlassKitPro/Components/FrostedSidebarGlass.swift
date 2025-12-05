@@ -2,11 +2,11 @@ import SwiftUI
 
 public extension GlassKit {
     struct FrostedSidebarGlass: View {
-        let sections = ["Inicio", "Panel", "Métricas", "Configuración"]
+        // MARK: Public
 
         public var body: some View {
             VStack(alignment: .leading, spacing: 14) {
-                ForEach(sections, id: \.self) { s in
+                ForEach(self.sections, id: \.self) { s in
                     Text(s)
                         .padding(10)
                         .background(.ultraThinMaterial)
@@ -16,5 +16,9 @@ public extension GlassKit {
             }
             .frame(width: 220)
         }
+
+        // MARK: Internal
+
+        let sections = ["Inicio", "Panel", "Métricas", "Configuración"]
     }
 }

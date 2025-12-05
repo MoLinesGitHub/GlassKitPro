@@ -4,6 +4,8 @@ import SwiftUI
 // ===============================================================
 
 struct CrystalKitProPanel: View {
+    // MARK: Internal
+
     let scrollTo: (String) -> Void
 
     var body: some View {
@@ -19,7 +21,7 @@ struct CrystalKitProPanel: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
-                    proButton(
+                    self.proButton(
                         title: "LiquidCard",
                         preview: GlassKit.CrystalLiquidCard(
                             title: "Demo",
@@ -32,7 +34,7 @@ struct CrystalKitProPanel: View {
                         anchor: "liquid"
                     )
 
-                    proButton(
+                    self.proButton(
                         title: "FAB",
                         preview: GlassKit.CrystalFloatingActionButton(
                             icon: "plus",
@@ -44,7 +46,7 @@ struct CrystalKitProPanel: View {
                         anchor: "fab"
                     )
 
-                    proButton(
+                    self.proButton(
                         title: "NavBar",
                         preview: GlassKit.CrystalNavigationBar(
                             title: "Demo",
@@ -58,7 +60,7 @@ struct CrystalKitProPanel: View {
                         anchor: "navbar"
                     )
 
-                    proButton(
+                    self.proButton(
                         title: "MetricCard",
                         preview: GlassKit.CrystalMetricCard(
                             title: "Value",
@@ -87,13 +89,15 @@ struct CrystalKitProPanel: View {
         .padding(.horizontal)
     }
 
+    // MARK: Private
+
     private func proButton(
         title: String,
         preview: some View,
         anchor: String
     ) -> some View {
         Button {
-            scrollTo(anchor)
+            self.scrollTo(anchor)
         } label: {
             VStack(spacing: 6) {
                 preview

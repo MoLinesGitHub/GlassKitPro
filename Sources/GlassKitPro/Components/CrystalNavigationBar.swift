@@ -2,14 +2,7 @@ import SwiftUI
 
 public extension GlassKit {
     struct CrystalNavigationBar: View {
-        let title: String
-        let subtitle: String?
-        let leadingAction: (() -> Void)?
-        let trailingAction: (() -> Void)?
-        let leadingIcon: String?
-        let trailingIcon: String?
-
-        @State private var titleAnimation = false
+        // MARK: Public
 
         public var body: some View {
             HStack {
@@ -26,10 +19,10 @@ public extension GlassKit {
                 Spacer()
 
                 VStack(spacing: 2) {
-                    Text(title)
+                    Text(self.title)
                         .font(.title2.weight(.bold))
                         .foregroundStyle(.primary)
-                        .scaleEffect(titleAnimation ? 1.05 : 1.0)
+                        .scaleEffect(self.titleAnimation ? 1.05 : 1.0)
 
                     if let subtitle {
                         Text(subtitle)
@@ -62,9 +55,22 @@ public extension GlassKit {
             )
             .onAppear {
                 withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {
-                    titleAnimation = true
+                    self.titleAnimation = true
                 }
             }
         }
+
+        // MARK: Internal
+
+        let title: String
+        let subtitle: String?
+        let leadingAction: (() -> Void)?
+        let trailingAction: (() -> Void)?
+        let leadingIcon: String?
+        let trailingIcon: String?
+
+        // MARK: Private
+
+        @State private var titleAnimation = false
     }
 }

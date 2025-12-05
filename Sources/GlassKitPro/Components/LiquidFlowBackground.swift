@@ -2,25 +2,22 @@ import SwiftUI
 
 public extension GlassKit {
     struct LiquidFlowBackground: View {
-        @State private var phase: CGFloat = 0
+        // MARK: Public
+
         public var body: some View {
             TimelineView(.animation) { timeline in
-                let _ = updatePhase(date: timeline.date)
+                let _ = self.updatePhase(date: timeline.date)
                 ZStack {
-                    WaveShape(phase: phase, strength: 22, frequency: 8)
+                    WaveShape(phase: self.phase, strength: 22, frequency: 8)
                         .fill(Color.white.opacity(0.16)).blur(radius: 24)
-                    WaveShape(phase: phase * 1.4, strength: 32, frequency: 6)
+                    WaveShape(phase: self.phase * 1.4, strength: 32, frequency: 6)
                         .fill(Color.white.opacity(0.12)).blur(radius: 30)
                 }
                 .ignoresSafeArea()
             }
         }
 
-        func updatePhase(date _: Date) -> CGFloat {
-            let sp: CGFloat = 0.045
-            phase += sp
-            return phase
-        }
+        // MARK: Internal
 
         struct WaveShape: Shape {
             var phase: CGFloat
@@ -34,8 +31,8 @@ public extension GlassKit {
                 p.move(to: .init(x: 0, y: h * 0.5))
                 for x in stride(from: 0, through: w, by: 1) {
                     let r = x / w
-                    let s = sin(r * frequency + phase)
-                    let y = h * 0.5 + s * strength
+                    let s = sin(r * self.frequency + self.phase)
+                    let y = h * 0.5 + s * self.strength
                     p.addLine(to: .init(x: x, y: y))
                 }
                 p.addLine(to: .init(x: w, y: h))
@@ -44,5 +41,15 @@ public extension GlassKit {
                 return p
             }
         }
+
+        func updatePhase(date _: Date) -> CGFloat {
+            let sp: CGFloat = 0.045
+            self.phase += sp
+            return self.phase
+        }
+
+        // MARK: Private
+
+        @State private var phase: CGFloat = 0
     }
 }
