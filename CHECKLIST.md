@@ -20,7 +20,7 @@
 
 ### Opción B: Paquete Local
 - [ ] File → Add Package Dependencies... → Add Local...
-- [ ] Navegar a: `/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro`
+- [ ] Navegar a: `/Volumes/SSD/xCode_Projects/GlassKitPro`
 - [ ] Seleccionar y añadir al target
 
 ---

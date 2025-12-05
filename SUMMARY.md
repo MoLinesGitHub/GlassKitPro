@@ -41,7 +41,7 @@ v1.0.1 - Swift 6.2 compatibility fixes
 
 Tu copia local corregida está en:
 ```
-/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 ```
 
 **Estado del repositorio:**
@@ -72,7 +72,7 @@ Si quieres trabajar con tu copia local:
 1. En Xcode: **File → Add Package Dependencies → Add Local...**
 2. Navegar a:
    ```
-   /Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+   /Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
    ```
 3. Seleccionar y añadir al target
 
@@ -151,7 +151,7 @@ En el directorio del paquete encontrarás:
 Para asegurarte de que el paquete está correcto antes de usarlo:
 
 ```bash
-cd "/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro"
+cd "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro"
 ./validate.sh
 ```
 
@@ -170,7 +170,7 @@ El script verificará:
 ### Si haces cambios locales:
 
 ```bash
-cd "/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro"
+cd "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro"
 
 # Ver estado
 git status
@@ -240,7 +240,7 @@ En Xcode:
 ### "Module 'GlassKitPro' has no member..."
 **Solución:** Verificar que usas v1.0.1:
 ```bash
-cd path/to/GlassKitPro
+cd /Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 git describe --tags  # Debe mostrar v1.0.1
 ```
 

@@ -196,12 +196,12 @@ struct Particle: Identifiable {
 #### Si usas copia local:
 El paquete ya está actualizado en:
 ```
-/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 ```
 
 Simplemente haz pull de los cambios:
 ```bash
-cd "/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro"
+cd "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro"
 git pull origin main
 ```
 
@@ -219,7 +219,7 @@ Para verificar que tu proyecto usa la versión corregida:
 
 2. **Compila tu proyecto:**
    ```bash
-   xcodebuild -workspace YourProject.xcworkspace -scheme YourScheme build
+   xcodebuild -workspace Cortes.xcworkspace -scheme Cortes build
    ```
    
    Debe compilar sin errores.

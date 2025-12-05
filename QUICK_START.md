@@ -30,13 +30,13 @@ File → Add Package Dependencies → Add Local...
 
 Tu copia ya corregida está en:
 ```
-/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 ```
 
 En cualquier proyecto nuevo:
 ```
 File → Add Package Dependencies → Add Local...
-Seleccionar: /Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+Seleccionar: /Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 ```
 
 ---
@@ -201,7 +201,7 @@ Si usas el paquete en un proyecto nuevo, asegúrate de tener estas configuracion
 import PackageDescription
 
 let package = Package(
-    name: "TuApp",
+    name: "Cortes",
     platforms: [
         .iOS(.v17)
     ],
@@ -213,7 +213,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "TuApp",
+            name: "Cortes",
             dependencies: ["GlassKitPro"]
         )
     ]
@@ -245,7 +245,7 @@ import GlassKitPro  // ← Asegúrate de importar el módulo
 
 **Solución:** Verifica que estás usando v1.0.1 o superior:
 ```bash
-cd path/to/GlassKitPro
+cd /Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 git fetch --tags
 git checkout v1.0.1
 ```

@@ -15,7 +15,7 @@ He corregido **todos los errores** de GlassKitPro y lo he preparado para que lo 
 
 Tu paquete corregido está aquí:
 ```
-/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
 ```
 
 **Versión actual:** v1.0.3  
@@ -39,7 +39,7 @@ Tu paquete corregido está aquí:
 4. Xcode te mostrará las versiones disponibles
 5. Selecciona: **"Up to Next Major Version"** con **1.0.3**
 6. Click **"Add Package"**
-7. Selecciona tu target (ej: "Anstop")
+7. Selecciona tu target (ej: "Cortes")
 8. Click **"Add Package"**
 
 ¡Listo! Ya puedes usarlo:
@@ -61,7 +61,7 @@ GlassKit.AdvancedGlassButton(title: "Hola", icon: "star.fill")
 3. Click en **"Add Local..."** (abajo a la izquierda)
 4. Navega a:
    ```
-   /Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro
+   /Volumes/SSD/xCode_Projects/Cortes/GlassKitPro
    ```
 5. Click **"Add Package"**
 6. Selecciona tu target
@@ -174,7 +174,7 @@ Todos están en `GlassKit.NombreDelComponente`:
 Si tienes dudas de que tu copia local esté bien:
 
 ```bash
-cd "/Volumes/SSD/xCode_Projects/MoLines Designs - Swift Package Dependencies/GlassKitPro"
+cd "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro"
 ./validate.sh
 ```
 
