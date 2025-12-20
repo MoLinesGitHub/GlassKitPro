@@ -4,7 +4,7 @@ public extension GlassKit {
     struct FrostedSidebarGlass: View {
         let sections = ["Inicio", "Panel", "Métricas", "Configuración"]
 
-        var body: some View {
+        public var body: some View {
             VStack(alignment: .leading, spacing: 14) {
                 ForEach(sections, id: \.self) { s in
                     Text(s)
@@ -16,5 +16,5 @@ public extension GlassKit {
             }
             .frame(width: 220)
         }
-}
     }
+}

@@ -3,7 +3,7 @@ import SwiftUI
 public extension GlassKit {
     struct DepthLayeredGlass<Content: View>: View {
         @ViewBuilder var content: () -> Content
-        var body: some View {
+        public var body: some View {
             ZStack {
                 RoundedRectangle(cornerRadius: 26)
                     .fill(.ultraThinMaterial)

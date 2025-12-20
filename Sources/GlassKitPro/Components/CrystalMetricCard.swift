@@ -16,21 +16,21 @@ public extension GlassKit {
 
             var color: Color {
                 switch self {
-                case .up: return .green
-                case .down: return .red
-                case .neutral: return .secondary
+                case .up: .green
+                case .down: .red
+                case .neutral: .secondary
                 }
             }
-            
+
             var icon: String {
                 switch self {
-                case .up: return "arrow.up"
-                case .down: return "arrow.down"
-                case .neutral: return "minus"
+                case .up: "arrow.up"
+                case .down: "arrow.down"
+                case .neutral: "minus"
                 }
             }
         }
-        
+
         init(
             title: String,
             value: String,
@@ -45,29 +45,29 @@ public extension GlassKit {
             self.accentColor = accentColor
         }
 
-        var body: some View {
+        public var body: some View {
             VStack(alignment: .leading, spacing: 12) {
                 Text(title)
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                
+
                 HStack(alignment: .firstTextBaseline) {
                     Text(value)
                         .font(.system(size: 32, weight: .bold))
                         .foregroundStyle(.primary)
                         .opacity(animateValue ? 1 : 0)
                         .offset(y: animateValue ? 0 : 10)
-                    
-                    if let trend = trend {
+
+                    if let trend {
                         Image(systemName: trend.icon)
                             .font(.caption)
                             .foregroundStyle(trend.color)
                     }
-                    
+
                     Spacer()
                 }
-                
-                if let subtitle = subtitle {
+
+                if let subtitle {
                     Text(subtitle)
                         .font(.caption2)
                         .foregroundStyle(.secondary)

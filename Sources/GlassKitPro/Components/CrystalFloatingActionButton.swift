@@ -23,7 +23,7 @@ public extension GlassKit {
             self.action = action
         }
 
-        var body: some View {
+        public var body: some View {
             Button(action: {
                 withAnimation(.easeInOut(duration: 0.1)) { isPressed = true }
                 action()
