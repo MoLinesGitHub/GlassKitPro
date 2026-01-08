@@ -2,6 +2,10 @@ import SwiftUI
 
 public extension GlassKit {
     struct LiquidFlowBackground: View {
+        // MARK: Lifecycle
+        
+        public init() {}
+        
         // MARK: Public
 
         public var body: some View {
