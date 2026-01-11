@@ -14,8 +14,8 @@ public extension GlassKit {
                         LinearGradient(
                             colors: [.black.opacity(0.4), .black.opacity(0.95)],
                             startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
+                            endPoint: .bottomTrailing,
+                        ),
                     )
                     .opacity(self.crystal ? 1 : 0)
                     .blur(radius: self.crystal ? 28 : 0)
@@ -24,8 +24,8 @@ public extension GlassKit {
                             gradient: .init(colors: [.black, .clear]),
                             center: .center,
                             startRadius: self.crystal ? 240 : 0,
-                            endRadius: self.crystal ? 0 : 240
-                        )
+                            endRadius: self.crystal ? 0 : 240,
+                        ),
                     )
                     .animation(.smooth(duration: 1.2), value: self.crystal)
             }

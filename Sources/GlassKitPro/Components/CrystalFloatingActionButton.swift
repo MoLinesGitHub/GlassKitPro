@@ -8,7 +8,7 @@ public extension GlassKit {
             icon: String,
             label: String = "",
             accentColor: Color = .blue,
-            action: @escaping () -> Void
+            action: @escaping () -> Void,
         ) {
             self.icon = icon
             self.label = label
@@ -39,8 +39,8 @@ public extension GlassKit {
                                 LinearGradient(
                                     colors: [.white, self.accentColor.opacity(0.9)],
                                     startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
+                                    endPoint: .bottomTrailing,
+                                ),
                             )
                             .rotationEffect(.degrees(self.rotationAngle))
                     }
@@ -65,11 +65,11 @@ public extension GlassKit {
                                 colors: [
                                     .white.opacity(self.isPressed ? 0.3 : 0.15),
                                     self.accentColor.opacity(self.isPressed ? 0.4 : 0.2),
-                                    .white.opacity(self.isPressed ? 0.1 : 0.05)
+                                    .white.opacity(self.isPressed ? 0.1 : 0.05),
                                 ],
                                 startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
+                                endPoint: .bottomTrailing,
+                            ),
                         )
                     Capsule()
                         .strokeBorder(self.accentColor.opacity(0.5), lineWidth: 1.3)

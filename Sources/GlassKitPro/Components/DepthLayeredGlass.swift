@@ -17,8 +17,8 @@ public extension GlassKit {
                         LinearGradient(
                             colors: [.white.opacity(0.08), .white.opacity(0.02)],
                             startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
+                            endPoint: .bottomTrailing,
+                        ),
                     )
                     .blur(radius: 12)
                     .scaleEffect(1.05)
@@ -30,7 +30,7 @@ public extension GlassKit {
                     .clipShape(RoundedRectangle(cornerRadius: 22))
                     .overlay(
                         RoundedRectangle(cornerRadius: 22)
-                            .stroke(Color.white.opacity(0.35), lineWidth: 1.2)
+                            .stroke(Color.white.opacity(0.35), lineWidth: 1.2),
                     )
             }
         }

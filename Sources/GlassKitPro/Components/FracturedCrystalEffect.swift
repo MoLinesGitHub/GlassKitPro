@@ -8,11 +8,11 @@ public extension GlassKit {
                     gradient: .init(colors: [
                         Color.blue.opacity(0.55),
                         Color.purple.opacity(0.35),
-                        Color.clear
+                        Color.clear,
                     ]),
                     center: .topLeading,
                     startRadius: 20,
-                    endRadius: 240
+                    endRadius: 240,
                 )
                 .blur(radius: 28)
 
@@ -33,11 +33,11 @@ public extension GlassKit {
                         LinearGradient(
                             gradient: .init(colors: [
                                 Color.white.opacity(0.45),
-                                Color.gray.opacity(0.12)
+                                Color.gray.opacity(0.12),
                             ]),
                             startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
+                            endPoint: .bottomTrailing,
+                        ),
                     )
                     .blur(radius: 6)
                     .opacity(0.80)

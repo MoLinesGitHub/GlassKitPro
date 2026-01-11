@@ -22,9 +22,9 @@ public extension GlassKit {
                                         colors: [.yellow.opacity(0.9), .orange.opacity(0.85)],
                                         center: .center,
                                         startRadius: 0,
-                                        endRadius: 20
-                                    )
-                                )
+                                        endRadius: 20,
+                                    ),
+                                ),
                         )
 
                     Text(self.title)

@@ -8,7 +8,7 @@ public extension GlassKit {
             title: String,
             accentColor: Color = .blue,
             intensity: Double = 0.7,
-            @ViewBuilder content: () -> some View
+            @ViewBuilder content: () -> some View,
         ) {
             self.title = title
             self.content = AnyView(content())
@@ -32,11 +32,11 @@ public extension GlassKit {
                                     colors: [
                                         self.accentColor.opacity(0.6),
                                         self.accentColor.opacity(0.8),
-                                        self.accentColor.opacity(0.4)
+                                        self.accentColor.opacity(0.4),
                                     ],
                                     startPoint: .leading,
-                                    endPoint: .trailing
-                                )
+                                    endPoint: .trailing,
+                                ),
                             )
                             .frame(height: 3)
                             .frame(maxWidth: 60)
@@ -59,11 +59,11 @@ public extension GlassKit {
                                 colors: [
                                     .white.opacity(self.pressedState ? 0.15 : 0.08),
                                     .white.opacity(self.pressedState ? 0.05 : 0.02),
-                                    self.accentColor.opacity(self.pressedState ? 0.12 : 0.06)
+                                    self.accentColor.opacity(self.pressedState ? 0.12 : 0.06),
                                 ],
                                 startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
+                                endPoint: .bottomTrailing,
+                            ),
                         )
 
                     RoundedRectangle(cornerRadius: 20)
@@ -72,12 +72,12 @@ public extension GlassKit {
                                 colors: [
                                     self.accentColor.opacity(self.intensity),
                                     .white.opacity(0.4),
-                                    self.accentColor.opacity(self.intensity * 0.8)
+                                    self.accentColor.opacity(self.intensity * 0.8),
                                 ],
                                 startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                                endPoint: .bottomTrailing,
                             ),
-                            lineWidth: 1.2
+                            lineWidth: 1.2,
                         )
                 }
             }

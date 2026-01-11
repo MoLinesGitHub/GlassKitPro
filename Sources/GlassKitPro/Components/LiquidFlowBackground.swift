@@ -3,14 +3,13 @@ import SwiftUI
 public extension GlassKit {
     struct LiquidFlowBackground: View {
         // MARK: Lifecycle
-        
+
         public init() {}
-        
+
         // MARK: Public
 
         public var body: some View {
             TimelineView(.animation) { timeline in
-                let _ = self.updatePhase(date: timeline.date)
                 ZStack {
                     WaveShape(phase: self.phase, strength: 22, frequency: 8)
                         .fill(Color.white.opacity(0.16)).blur(radius: 24)
@@ -18,6 +17,9 @@ public extension GlassKit {
                         .fill(Color.white.opacity(0.12)).blur(radius: 30)
                 }
                 .ignoresSafeArea()
+                .task(id: timeline.date) {
+                    _ = self.updatePhase(date: timeline.date)
+                }
             }
         }
 

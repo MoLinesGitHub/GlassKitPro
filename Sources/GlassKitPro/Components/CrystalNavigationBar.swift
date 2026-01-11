@@ -50,8 +50,8 @@ public extension GlassKit {
                     .fill(.regularMaterial)
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
-                            .stroke(Color.white.opacity(0.2), lineWidth: 0.5)
-                    )
+                            .stroke(Color.white.opacity(0.2), lineWidth: 0.5),
+                    ),
             )
             .onAppear {
                 withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) {

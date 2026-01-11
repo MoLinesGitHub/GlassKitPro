@@ -62,9 +62,10 @@ public final class GlassAppearanceManager {
 
     // MARK: - Paletas por tema + perfil
 
-    public static func palette(for theme: Theme,
-                               profile: LightProfile = detectLightProfile()) -> Palette
-    {
+    public static func palette(
+        for theme: Theme,
+        profile: LightProfile = detectLightProfile(),
+    ) -> Palette {
         switch (theme, profile) {
         // TURQUESA OSCURO
         case (.darkTurquoise, .ldr):
@@ -72,7 +73,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.00, green: 0.45, blue: 0.55),
                 highlight: Color(red: 0.00, green: 0.70, blue: 0.80),
                 accent: Color.cyan,
-                glow: Color.cyan.opacity(0.45)
+                glow: Color.cyan.opacity(0.45),
             )
 
         case (.darkTurquoise, .hdr):
@@ -80,7 +81,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.00, green: 0.60, blue: 0.78),
                 highlight: Color.cyan,
                 accent: Color.white,
-                glow: Color.cyan.opacity(0.80)
+                glow: Color.cyan.opacity(0.80),
             )
 
         // BEIGE CLARO
@@ -89,7 +90,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.96, green: 0.80, blue: 0.62),
                 highlight: Color(red: 1.00, green: 0.90, blue: 0.75),
                 accent: Color.orange.opacity(0.85),
-                glow: Color.orange.opacity(0.35)
+                glow: Color.orange.opacity(0.35),
             )
 
         case (.lightBeige, .hdr):
@@ -97,7 +98,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.99, green: 0.88, blue: 0.72),
                 highlight: Color(red: 1.00, green: 0.96, blue: 0.84),
                 accent: Color.white,
-                glow: Color.orange.opacity(0.65)
+                glow: Color.orange.opacity(0.65),
             )
 
         // SOLAR
@@ -106,7 +107,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 1.00, green: 0.65, blue: 0.25),
                 highlight: Color(red: 1.00, green: 0.82, blue: 0.35),
                 accent: Color.yellow.opacity(0.9),
-                glow: Color.orange.opacity(0.6)
+                glow: Color.orange.opacity(0.6),
             )
 
         case (.solar, .hdr):
@@ -114,7 +115,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 1.00, green: 0.72, blue: 0.28),
                 highlight: Color(red: 1.00, green: 0.91, blue: 0.42),
                 accent: Color.white,
-                glow: Color.yellow.opacity(0.9)
+                glow: Color.yellow.opacity(0.9),
             )
 
         // ARCTIC
@@ -123,7 +124,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.70, green: 0.85, blue: 1.00),
                 highlight: Color(red: 0.84, green: 0.93, blue: 1.00),
                 accent: Color.blue.opacity(0.85),
-                glow: Color.cyan.opacity(0.5)
+                glow: Color.cyan.opacity(0.5),
             )
 
         case (.arctic, .hdr):
@@ -131,7 +132,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.60, green: 0.82, blue: 1.00),
                 highlight: Color(red: 0.88, green: 0.96, blue: 1.00),
                 accent: Color.white,
-                glow: Color.cyan.opacity(0.9)
+                glow: Color.cyan.opacity(0.9),
             )
 
         // LAVA
@@ -140,7 +141,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.18, green: 0.02, blue: 0.02),
                 highlight: Color(red: 0.65, green: 0.16, blue: 0.12),
                 accent: Color.red.opacity(0.9),
-                glow: Color.red.opacity(0.7)
+                glow: Color.red.opacity(0.7),
             )
 
         case (.lava, .hdr):
@@ -148,7 +149,7 @@ public final class GlassAppearanceManager {
                 background: Color(red: 0.08, green: 0.00, blue: 0.00),
                 highlight: Color(red: 0.85, green: 0.18, blue: 0.15),
                 accent: Color.white,
-                glow: Color.red.opacity(1.0)
+                glow: Color.red.opacity(1.0),
             )
 
         // IMAGEN DE FONDO
@@ -158,7 +159,7 @@ public final class GlassAppearanceManager {
                 background: Color.black.opacity(0.75),
                 highlight: Color.white.opacity(0.35),
                 accent: Color.cyan,
-                glow: Color.cyan.opacity(0.6)
+                glow: Color.cyan.opacity(0.6),
             )
         }
     }
@@ -166,9 +167,10 @@ public final class GlassAppearanceManager {
     // MARK: - Fondos
 
     /// Vista de fondo principal según tema + perfil de luz.
-    public static func view(for theme: Theme,
-                            profile: LightProfile = detectLightProfile()) -> AnyView
-    {
+    public static func view(
+        for theme: Theme,
+        profile: LightProfile = detectLightProfile(),
+    ) -> AnyView {
         switch theme {
         case .imageBackground:
             // Imagen de fondo + overlay según paleta
@@ -182,15 +184,15 @@ public final class GlassAppearanceManager {
                             LinearGradient(
                                 colors: [
                                     palette.background.opacity(0.4),
-                                    palette.background.opacity(0.9)
+                                    palette.background.opacity(0.9),
                                 ],
                                 startPoint: .top,
-                                endPoint: .bottom
-                            )
+                                endPoint: .bottom,
+                            ),
                         )
                     Color.black.opacity(profile == .hdr ? 0.35 : 0.55)
                 }
-                .ignoresSafeArea()
+                .ignoresSafeArea(),
             )
 
         default:
@@ -199,12 +201,12 @@ public final class GlassAppearanceManager {
                 LinearGradient(
                     colors: [
                         palette.background,
-                        palette.glow
+                        palette.glow,
                     ],
                     startPoint: .topLeading,
-                    endPoint: .bottomTrailing
+                    endPoint: .bottomTrailing,
                 )
-                .ignoresSafeArea()
+                .ignoresSafeArea(),
             )
         }
     }

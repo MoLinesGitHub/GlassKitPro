@@ -42,11 +42,11 @@ public struct GlassKitThemeControlCenter: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 22)
-                .fill(.ultraThickMaterial)
+                .fill(.ultraThickMaterial),
         )
         .overlay(
             RoundedRectangle(cornerRadius: 22)
-                .stroke(Color.white.opacity(0.35), lineWidth: 1)
+                .stroke(Color.white.opacity(0.35), lineWidth: 1),
         )
         .shadow(color: .black.opacity(0.45), radius: 26, y: 18)
         .padding(.horizontal)
@@ -73,8 +73,8 @@ public struct GlassKitThemeControlCenter: View {
                     RoundedRectangle(cornerRadius: 14)
                         .stroke(
                             Color.white.opacity(isSelected ? 0.9 : 0.4),
-                            lineWidth: isSelected ? 2 : 1
-                        )
+                            lineWidth: isSelected ? 2 : 1,
+                        ),
                 )
                 .frame(width: 96, height: 56)
                 .clipped()
@@ -87,19 +87,19 @@ public struct GlassKitThemeControlCenter: View {
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(.ultraThinMaterial)
+                .fill(.ultraThinMaterial),
         )
         .overlay(
             RoundedRectangle(cornerRadius: 16)
                 .stroke(
                     Color.white.opacity(isSelected ? 0.8 : 0.25),
-                    lineWidth: isSelected ? 1.3 : 0.8
-                )
+                    lineWidth: isSelected ? 1.3 : 0.8,
+                ),
         )
         .shadow(
             color: .black.opacity(0.35),
             radius: isSelected ? 14 : 8,
-            y: 6
+            y: 6,
         )
     }
 

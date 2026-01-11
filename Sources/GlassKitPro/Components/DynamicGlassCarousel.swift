@@ -30,7 +30,7 @@ public extension GlassKit {
 // MARK: - Convenience for Strings
 
 public extension GlassKit.DynamicGlassCarousel where Data == [IdentifiedString], Content == TextCard {
-    init(items: [String] = (1...8).map { "Tarjeta \($0)" }) {
+    init(items: [String] = (1 ... 8).map { "Tarjeta \($0)" }) {
         let identified = items.enumerated().map { IdentifiedString(id: $0.offset, value: $0.element) }
         self.init(identified) { element in
             TextCard(text: element.value)

@@ -9,7 +9,7 @@ public extension GlassKit {
             value: String,
             subtitle: String? = nil,
             trend: TrendDirection? = nil,
-            accentColor: Color = .blue
+            accentColor: Color = .blue,
         ) {
             self.title = title
             self.value = value

@@ -23,9 +23,11 @@ public extension GlassKit {
             .rotation3DEffect(.degrees(self.tilt.height * -0.6), axis: (1, 0, 0))
             .gesture(
                 DragGesture(minimumDistance: 0)
-                    .onChanged { v in self.tilt = .init(width: (v.location.x - 180) / 18,
-                                                        height: (v.location.y - 110) / 18) }
-                    .onEnded { _ in withAnimation(.smooth(duration: 0.45)) { self.tilt = .zero } }
+                    .onChanged { v in self.tilt = .init(
+                        width: (v.location.x - 180) / 18,
+                        height: (v.location.y - 110) / 18,
+                    ) }
+                    .onEnded { _ in withAnimation(.smooth(duration: 0.45)) { self.tilt = .zero } },
             )
         }
 

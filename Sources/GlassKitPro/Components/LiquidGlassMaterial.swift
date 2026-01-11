@@ -14,20 +14,20 @@ public extension GlassKit {
                             Color.blue.opacity(0.65),
                             Color.cyan.opacity(0.65),
                             Color.purple.opacity(0.65),
-                            Color.pink.opacity(0.65)
+                            Color.pink.opacity(0.65),
                         ]),
                         center: .center,
-                        angle: .degrees((shift * 60).truncatingRemainder(dividingBy: 360))
+                        angle: .degrees((shift * 60).truncatingRemainder(dividingBy: 360)),
                     )
                     .blur(radius: 40)
 
                     RadialGradient(
                         gradient: .init(colors: [
-                            Color.white.opacity(0.20), Color.clear
+                            Color.white.opacity(0.20), Color.clear,
                         ]),
                         center: .topLeading,
                         startRadius: 20,
-                        endRadius: 260
+                        endRadius: 260,
                     )
                 }
             }
