@@ -8,7 +8,7 @@ public extension GlassKit {
             title: String,
             accentColor: Color = .blue,
             intensity: Double = 0.7,
-            @ViewBuilder content: () -> some View
+            @ViewBuilder content: () -> some View,
         ) {
             self.title = title
             self.content = AnyView(content())

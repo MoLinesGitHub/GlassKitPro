@@ -4,7 +4,7 @@ public extension GlassKit {
     struct CrystalMetricCard: View {
         // MARK: Lifecycle
 
-        init(
+        public init(
             title: String,
             value: String,
             subtitle: String? = nil,
@@ -64,9 +64,9 @@ public extension GlassKit {
             }
         }
 
-        // MARK: Internal
+        // MARK: Types
 
-        enum TrendDirection {
+        public enum TrendDirection {
             case up, down, neutral
 
             // MARK: Internal

@@ -4,6 +4,8 @@ public extension GlassKit {
     struct LiquidGlassMaterial: View {
         // MARK: Public
 
+        public init() {}
+
         public var body: some View {
             TimelineView(.animation) { timeline in
                 let now = timeline.date.timeIntervalSinceReferenceDate
