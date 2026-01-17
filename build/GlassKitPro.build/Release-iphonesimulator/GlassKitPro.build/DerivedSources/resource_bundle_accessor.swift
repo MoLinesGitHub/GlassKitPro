@@ -15,7 +15,8 @@ extension Foundation.Bundle {
             // check for 'PACKAGE_RESOURCE_BUNDLE_URL' will be removed when all clients have switched over.
             // This removal is tracked by rdar://107766372.
             if let override = ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_PATH"]
-                ?? ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_URL"] {
+                ?? ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_URL"]
+            {
                 overrides = [URL(fileURLWithPath: override)]
             } else {
                 overrides = []
