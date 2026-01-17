@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v17),
         .macOS(.v14),
         .watchOS(.v10),
-        .visionOS(.v1)
+        .visionOS(.v1),
     ],
     products: [
         .library(
@@ -18,31 +18,31 @@ let package = Package(
         .library(
             name: "GlassKitProAnimations",
             targets: ["GlassKitProAnimations"],
-        )
+        ),
     ],
     targets: [
         .target(
             name: "GlassKitPro",
             resources: [
                 .process("Resources"),
-                .process("Shaders")
+                .process("Shaders"),
             ],
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+                .enableExperimentalFeature("StrictConcurrency"),
             ],
         ),
         .target(
             name: "GlassKitProAnimations",
             dependencies: [],
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+                .enableExperimentalFeature("StrictConcurrency"),
             ],
         ),
         .executableTarget(
             name: "GlassKitProDemoApp",
             dependencies: ["GlassKitPro", "GlassKitProAnimations"],
             path: "Examples/GlassKitProDemoApp",
-        )
+        ),
     ],
     swiftLanguageModes: [.v6],
 )
