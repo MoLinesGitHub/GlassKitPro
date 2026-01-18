@@ -184,7 +184,7 @@ public final class GlassAppearanceManager {
                             LinearGradient(
                                 colors: [
                                     palette.background.opacity(0.4),
-                                    palette.background.opacity(0.9),
+                                    palette.background.opacity(0.9)
                                 ],
                                 startPoint: .top,
                                 endPoint: .bottom,
@@ -201,7 +201,7 @@ public final class GlassAppearanceManager {
                 LinearGradient(
                     colors: [
                         palette.background,
-                        palette.glow,
+                        palette.glow
                     ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing,
