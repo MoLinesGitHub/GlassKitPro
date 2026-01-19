@@ -1,4 +1,0 @@
-module GlassKitProAnimations {
-header "GlassKitProAnimations-Swift.h"
-export *
-}
