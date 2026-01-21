@@ -65,7 +65,7 @@ public extension GlassKit {
                                 colors: [
                                     .white.opacity(self.isPressed ? 0.3 : 0.15),
                                     self.accentColor.opacity(self.isPressed ? 0.4 : 0.2),
-                                    .white.opacity(self.isPressed ? 0.1 : 0.05)
+                                    .white.opacity(self.isPressed ? 0.1 : 0.05),
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing,
