@@ -1,0 +1,249 @@
+{
+  "" : {
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitPro-primary.dia",
+    "emit-module-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitPro-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitPro-primary-emit-module.dia",
+    "pch" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitPro-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitPro-primary.swiftdeps"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/AdvancedDashboardGlass.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedDashboardGlass~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/AdvancedGlassButton.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassButton~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/AdvancedGlassCard.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AdvancedGlassCard~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/AppToolbarGlass.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/AppToolbarGlass~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/CrystalFloatingActionButton.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalFloatingActionButton~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/CrystalLiquidCard.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalLiquidCard~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/CrystalMetricCard.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalMetricCard~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/CrystalNavigationBar.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalNavigationBar~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/CrystalParticles.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalParticles~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/CrystallizationTransition.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystallizationTransition~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/DepthLayeredGlass.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DepthLayeredGlass~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/DynamicGlassCarousel.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/DynamicGlassCarousel~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/FracturedCrystalEffect.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FracturedCrystalEffect~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/FrostedSidebarGlass.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/FrostedSidebarGlass~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/GlassHeroBanner.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassHeroBanner~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/LiquidFlowBackground.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidFlowBackground~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Components/LiquidGlassMaterial.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/LiquidGlassMaterial~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Demo/CrystalKitProPanel.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/CrystalKitProPanel~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Demo/GlassKitDemoContainer.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitDemoContainer~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Demo/GlassKitThemeControlCenter.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKitThemeControlCenter~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Engine/GlassAppearanceManager.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassAppearanceManager~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Engine/GlassKit.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassKit~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitPro/Engine/GlassThemeEntity.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/GlassThemeEntity~partial.swiftmodule"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitPro.build/Objects-normal/x86_64/resource_bundle_accessor~partial.swiftmodule"
+  }
+}

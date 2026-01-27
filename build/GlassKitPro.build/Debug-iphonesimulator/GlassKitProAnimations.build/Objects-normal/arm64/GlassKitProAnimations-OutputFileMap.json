@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassKitProAnimations-primary.dia",
+    "emit-module-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassKitProAnimations-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassKitProAnimations-primary-emit-module.dia",
+    "pch" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassKitProAnimations-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassKitProAnimations-primary.swiftdeps"
+  },
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/Sources/GlassKitProAnimations/GlassAnimations.swift" : {
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.dia",
+    "index-unit-output-path" : "/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.o",
+    "llvm-bc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.bc",
+    "object" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.o",
+    "swift-dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations.swiftdeps",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Debug-iphonesimulator/GlassKitProAnimations.build/Objects-normal/arm64/GlassAnimations~partial.swiftmodule"
+  }
+}
