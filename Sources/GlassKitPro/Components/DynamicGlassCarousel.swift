@@ -1,7 +1,7 @@
 import SwiftUI
 
 public extension GlassKit {
-    struct DynamicGlassCarousel<Data, Content>: View where Data: RandomAccessCollection, Data.Element: Identifiable, Content: View {
+    struct DynamicGlassCarousel<Data: RandomAccessCollection, Content: View>: View where Data.Element: Identifiable {
         // MARK: Lifecycle
 
         public init(_ data: Data, @ViewBuilder content: @escaping (Data.Element) -> Content) {
@@ -48,7 +48,9 @@ public struct IdentifiedString: Identifiable, Hashable {
 public struct TextCard: View {
     // MARK: Lifecycle
 
-    public init(text: String) { self.text = text }
+    public init(text: String) {
+        self.text = text
+    }
 
     // MARK: Public
 

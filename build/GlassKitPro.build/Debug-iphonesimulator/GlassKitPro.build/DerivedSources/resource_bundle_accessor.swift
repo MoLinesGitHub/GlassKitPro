@@ -11,17 +11,17 @@ extension Foundation.Bundle {
 
         let overrides: [URL]
         #if DEBUG
-        // The 'PACKAGE_RESOURCE_BUNDLE_PATH' name is preferred since the expected value is a path. The
-        // check for 'PACKAGE_RESOURCE_BUNDLE_URL' will be removed when all clients have switched over.
-        // This removal is tracked by rdar://107766372.
-        if let override = ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_PATH"]
-                       ?? ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_URL"] {
-            overrides = [URL(fileURLWithPath: override)]
-        } else {
-            overrides = []
-        }
+            // The 'PACKAGE_RESOURCE_BUNDLE_PATH' name is preferred since the expected value is a path. The
+            // check for 'PACKAGE_RESOURCE_BUNDLE_URL' will be removed when all clients have switched over.
+            // This removal is tracked by rdar://107766372.
+            if let override = ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_PATH"]
+                ?? ProcessInfo.processInfo.environment["PACKAGE_RESOURCE_BUNDLE_URL"] {
+                overrides = [URL(fileURLWithPath: override)]
+            } else {
+                overrides = []
+            }
         #else
-        overrides = []
+            overrides = []
         #endif
 
         let candidates = overrides + [
