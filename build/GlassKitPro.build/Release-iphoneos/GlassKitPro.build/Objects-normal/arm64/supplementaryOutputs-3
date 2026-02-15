@@ -1,0 +1,12 @@
+{
+  "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "abi-baseline-json" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro.abi.json",
+    "const-values" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro-primary.swiftconstvalues",
+    "dependencies" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro-primary.d",
+    "diagnostics" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro-primary.dia",
+    "objc-header" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro-Swift.h",
+    "swiftdoc" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro.swiftdoc",
+    "swiftmodule" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro.swiftmodule",
+    "swiftsourceinfo" : "/Volumes/SSD/xCode_Projects/Cortes/GlassKitPro/build/GlassKitPro.build/Release-iphoneos/GlassKitPro.build/Objects-normal/arm64/GlassKitPro.swiftsourceinfo"
+  }
+}
